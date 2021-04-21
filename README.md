@@ -1,6 +1,27 @@
 # Automated Natural Language Dictionary System
 
-## Requirements:
+## Commands to run project
+
+1. Create and activate virtual environment.
+
+```terminal
+python3 -m venv venv
+source ./venv/bin/activate
+```
+
+2. Install reqirements
+
+```terminal
+pip install -r requirements.txt
+```
+
+3. Execute source code
+
+```terminal
+python word-analyser.py
+```
+
+## Project Requirements:
 
 * The input - a natural language text;
 * The output is a list of natural language words extracted from this text with additional information;

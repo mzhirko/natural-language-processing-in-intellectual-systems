@@ -1,4 +1,3 @@
-__version__ = 'Version:1.0'
 from tkinter import *
 from operator import itemgetter
 import requests
@@ -7,7 +6,7 @@ import json
 list_words = []
 
 
-def f2(line, window):
+def preprocess_input(line, window):
     headers = {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
@@ -20,12 +19,11 @@ def f2(line, window):
         ('targetType', 'syntax-relation'),
         ('apikey', 'b11e0cc09d4d7b3c4c56116688dd27beae454257'),
     )
-    # line = line.replace('\r', ' ')
+
     line = line.replace('\n', ' ')
     data = '[ { "text" : "' + str(line) + '" } ]'
 
-    response = requests.post('http://api.ispras.ru/texterra/v1/nlp', headers=headers, params=params,
-                             data=data.encode('utf-8'))
+    response = requests.post('http://api.ispras.ru/texterra/v1/nlp', headers=headers, params=params, data=data.encode('utf-8'))
     parsed_string = json.loads(response.text)
     position = parsed_string[0]['annotations']['pos-token']
     word = parsed_string[0]['annotations']['spelling-correction-token']
@@ -53,22 +51,22 @@ def f2(line, window):
 
 
 root = Tk()
-root.title("Textedit " + str(__version__))
+root.title("DICTIONARY")
 root.resizable(width=False, height=False)
-root.geometry("200x130+300+300")
+root.geometry("500x350+200+200")
 
 
 def inputWindow():
     children = Toplevel(root)
     children.title('Input word and sentence')
-    children.geometry("420x200+300+300")
+    children.geometry("500x350+200+200")
     calculated_text = Text(children, height=10, width=50)
-    scrollb = Scrollbar(children, command=calculated_text.yview)
-    scrollb.grid(row=4, column=4, sticky='nsew')
+    scrollbar = Scrollbar(children, command=calculated_text.yview)
+    scrollbar.grid(row=4, column=4, sticky='nsew')
     calculated_text.grid(row=4, column=0, sticky='nsew', columnspan=3)
-    calculated_text.configure(yscrollcommand=scrollb.set)
-    b1 = Button(children, width=25, text="Send", command=lambda: f2(calculated_text.get(1.0, END), children))
-    b1.grid(row=5, column=1, sticky=E, padx=5, pady=8, )
+    calculated_text.configure(yscrollcommand=scrollbar.set)
+    button = Button(children, width=25, text="Send", command=lambda: preprocess_input(calculated_text.get(1.0, END), children))
+    button.grid(row=5, column=1, sticky=E, padx=5, pady=8, )
 
 
 def quitWindow(window):
@@ -78,12 +76,12 @@ def quitWindow(window):
 def helpWindow():
     children = Toplevel(root)
     children.title('Helper')
-    children.geometry("420x300+300+300")
+    children.geometry("500x350+200+200")
     calculated_text = Text(children, height=15, width=50)
-    scrollb = Scrollbar(children, command=calculated_text.yview)
-    scrollb.grid(row=4, column=4, sticky='nsew')
+    scrollbar = Scrollbar(children, command=calculated_text.yview)
+    scrollbar.grid(row=4, column=4, sticky='nsew')
     calculated_text.grid(row=4, column=0, sticky='nsew', columnspan=3)
-    calculated_text.configure(yscrollcommand=scrollb.set)
+    calculated_text.configure(yscrollcommand=scrollbar.set)
     calculated_text.insert('end', 'A       прилагательное\nPR       предлог\nCONJ        союз\nS         существительное\nNUM       числительное')
     calculated_text.configure(state='disabled')
 
@@ -92,26 +90,25 @@ def viewWindow():
     list_words.sort(key=itemgetter('name'))
     children = Toplevel(root)
     children.title('View dictionary')
-    children.geometry("420x300+300+300")
+    children.geometry("500x350+200+200")
     list_box = Listbox(children, height=10, width=65)
-    scrollb = Scrollbar(children, command=list_box.yview)
-    scrollb.grid(row=4, column=4, sticky='nsew')
+    scrollbar = Scrollbar(children, command=list_box.yview)
+    scrollbar.grid(row=4, column=4, sticky='nsew')
     list_box.grid(row=4, column=0, sticky='nsew', columnspan=3)
-    list_box.configure(yscrollcommand=scrollb.set)
-    b1 = Button(children, width=25, text="Ok", command=lambda: quitWindow(children))
-    b1.grid(row=5, column=1, sticky=E, padx=5, pady=8, )
-    b1 = Button(children, text="Help?", command=helpWindow)
-    b1.grid(row=1, column=1, sticky=W, padx=5, pady=8, )
+    list_box.configure(yscrollcommand=scrollbar.set)
+    button = Button(children, width=25, text="Ok", command=lambda: quitWindow(children))
+    button.grid(row=5, column=1, sticky=E, padx=5, pady=8, )
+    button = Button(children, text="Help?", command=helpWindow)
+    button.grid(row=1, column=1, sticky=W, padx=5, pady=8, )
     i = len(list_words)-1
     while i >= 0:
         list_box.insert(0, str(list_words[i]['name']) + ' ' + str(list_words[i]['param']))
         i -= 1
 
 
-b3 = Button(text="Input", width=25, command=inputWindow)
-b3.grid(row=5, column=4, sticky=N, padx=5, pady=8, )
-b4 = Button(text="View", width=25, command=viewWindow)
-b4.grid(row=4, column=4, sticky=S, padx=5, pady=8, )
+input_button = Button(text="Input", width=25, command=inputWindow)
+input_button.grid(row=5, column=4, sticky=N, padx=5, pady=8, )
+view_button = Button(text="View", width=25, command=viewWindow)
+view_button.grid(row=4, column=4, sticky=S, padx=5, pady=8, )
 
 root.mainloop()
-
