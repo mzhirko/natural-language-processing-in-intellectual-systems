@@ -22,7 +22,7 @@ python source-code-name.py
 ```
 
 ## Contents:
-    * [dictionary system;]
-    * [syntax analysis;]
-    * [semantic parse.]
+    * https://github.com/mzhirko/natural-language-processing-in-intellectual-systems/tree/main/word-analyser[dictionary system;]
+    * https://github.com/mzhirko/natural-language-processing-in-intellectual-systems/tree/main/syntax-tree[syntax analysis;]
+    * https://github.com/mzhirko/natural-language-processing-in-intellectual-systems/tree/main/semantic-parse[semantic parse.]
 _done by Zhirko Maria_
