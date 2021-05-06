@@ -53,7 +53,7 @@ def distance(a, b):
 
 def get_filename():
     global file_name
-    file_name = fd.askopenfilename(filetypes=(("Docx files", "*.docx"),))
+    file_name = fd.askopenfilename(filetypes=(("Txt files", "*.txt"),))
 
 
 file_name = ''

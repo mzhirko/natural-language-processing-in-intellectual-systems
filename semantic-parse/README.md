@@ -35,14 +35,14 @@ python semantic-parse.py
 
 ## Project Requests:
 
-    _*Processing Language:*_
-        English
-    _*Functionality:*_
-        [WordNet](https://wordnet.princeton.edu/)
-    _*Document format:*_
-        *.txt -- plain text
+_*Processing Language:*_
+    English
+_*Functionality:*_
+    [WordNet](https://wordnet.princeton.edu/)
+_*Document format:*_
+    *.txt -- plain text
 
 ## Demo:
-
+![Animated gif demo](../demo/semantic-parse.gif)
 
 _done by Zhirko Maria_
