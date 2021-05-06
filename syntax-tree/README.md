@@ -30,10 +30,11 @@ python syntax-parse-tree.py
 * It is necessary to have the means of viewing, editing and updating of the existing dictionaries
 
 ## Featured requests:
-_*Processed language:*_
-    Russian
-_*Document format:*_
-    txt -- plain text
+_**Processed language:**_
+ Russian;
+
+_**Document format:**_
+ txt -- plain text.
 
 ## Demo:
 
