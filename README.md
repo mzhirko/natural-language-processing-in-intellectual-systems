@@ -1,4 +1,4 @@
-# Automated Natural Language Dictionary System
+# Natural Language Processing System
 
 ## Commands to run project
 
