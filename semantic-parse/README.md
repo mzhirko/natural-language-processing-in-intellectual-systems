@@ -18,18 +18,31 @@ pip install -r requirements.txt
 3. Execute source code
 
 ```terminal
-python word-analyser.py
+python semantic-parse.py
 ```
+
+## Project featured tasks:
+
+    * To study the theoretical material necessary to solve the problem of automatic semantic analysis of natural language text.
+    * To consolidate programming skills of natural language systems and auxiliary applied programs in one of the programming languages.
 
 ## Project Requirements:
 
-* The input - a natural language text;
-* The output is a list of natural language words extracted from this text with additional information;
-* The system interface must be extremely simple and accessible to users of any level, contain a clear set of tools and means, as well as help-tools;
-* The system must allow the user to supplement the dictionary with all the necessary information (up to the expansion of the set of such information). For example, the means of "manual" addition of new words into the dictionary, i.e., not from the texts is mandatory;
-* It is necessary to have the means of viewing, editing and updating of the existing dictionaries
+    - input - a file containing the NL text;
+    - output - structures obtained by automatic semantic analysis of the input text sentences, using the functionality provided by WordNet, FrameNet, ConceptNet libraries;
+    - the system interface should be extremely simple and accessible for users of any level, and contain a comprehensible set of tools and means, as well as help-means;
+    - availability of means for printing out the information obtained at the output.
 
-## Task:
-A dictionary with a list of words ordered alphabetically which includes only lexemes with additionally formed information about the place and role of a given word in a sentence. This information includes a description of what part of a sentence the word can be and in its form (case, number, tense, etc.).
+## Project Requests:
+
+    _*Processing Language:*_
+        English
+    _*Functionality:*_
+        [WordNet](https://wordnet.princeton.edu/)
+    _*Document format:*_
+        *.txt -- plain text
+
+## Demo:
+
 
 _done by Zhirko Maria_

@@ -18,7 +18,7 @@ pip install -r requirements.txt
 3. Execute source code
 
 ```terminal
-python word-analyser.py
+python syntax-parse-tree.py
 ```
 
 ## Project Requirements:
@@ -29,7 +29,13 @@ python word-analyser.py
 * The system must allow the user to supplement the dictionary with all the necessary information (up to the expansion of the set of such information). For example, the means of "manual" addition of new words into the dictionary, i.e., not from the texts is mandatory;
 * It is necessary to have the means of viewing, editing and updating of the existing dictionaries
 
-## Task:
-A dictionary with a list of words ordered alphabetically which includes only lexemes with additionally formed information about the place and role of a given word in a sentence. This information includes a description of what part of a sentence the word can be and in its form (case, number, tense, etc.).
+## Featured requests:
+    _*Processed language:*_
+        Russian
+    _*Document format:*_
+        txt -- plain text
+
+## Demo:
+
 
 _done by Zhirko Maria_
