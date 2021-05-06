@@ -32,4 +32,4 @@ python word-analyser.py
 ## Task:
 A dictionary with a list of words ordered alphabetically which includes only lexemes with additionally formed information about the place and role of a given word in a sentence. This information includes a description of what part of a sentence the word can be and in its form (case, number, tense, etc.).
 
-_done by Zhirko Maria_
+_done by Zhirko Maria and Aliaksandr Khalupka_
