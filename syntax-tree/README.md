@@ -40,5 +40,8 @@ _**Document format:**_
 
 ![Animated gif demo](../demo/syntax-parse.gif)
 
+## Report link:
+
+[Report for syntax tree](https://docs.google.com/document/d/1lHL-ecB_jY1HGHBBdXUY_-w3iKbmAZYQuAGexDS_cNI/edit?usp=sharing)
 
 _done by Zhirko Maria_

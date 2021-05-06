@@ -36,4 +36,8 @@ A dictionary with a list of words ordered alphabetically which includes only lex
 
 ![Animated gif demo](../demo/word-analyser.gif)
 
+## Report link:
+
+[Report for word analyser](https://docs.google.com/document/d/1Y0uw7QaQIBhpsHJXb8FKADiWsUSMJaXXHesrLpov3Ls/edit?usp=sharing)
+
 _done by Zhirko Maria_
