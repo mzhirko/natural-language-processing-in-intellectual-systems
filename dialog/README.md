@@ -3,7 +3,7 @@
 ## Runing this project
 
 1. You should use telegram web or desktop app to test dialog system.
-2. Find `@alexkhabook_bot` in you telegram app
+2. Find [@alexkhabook_bot](https://t.me/alexkhabook_bot) in you telegram app
 3. Enjoy!
 
 ## Project Requirements:
