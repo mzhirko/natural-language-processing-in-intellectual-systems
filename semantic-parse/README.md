@@ -50,4 +50,3 @@ _**Document format:**_
 ## Report link:
 
 [Report for semantic parse](https://docs.google.com/document/d/14rz9vU9b_FuH-jVBTyIYfc3EThjf3Mz37YLfoOO1oAo/edit?usp=sharing)
-
