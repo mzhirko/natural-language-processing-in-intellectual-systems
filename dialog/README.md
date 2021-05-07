@@ -17,5 +17,3 @@ _**Dialog language:**_
 ## Report link:
 
 [Report dialog](https://docs.google.com/document/d/1HPKYCNXT_DlQAnqnPxtuiBjGhu5oD9sNF-u34Zy7F4U/edit?usp=sharing)
-
-_done by Zhirko Maria and Khalupka Aliaksandr_
