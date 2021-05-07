@@ -44,4 +44,3 @@ _**Document format:**_
 
 [Report for syntax tree](https://docs.google.com/document/d/1lHL-ecB_jY1HGHBBdXUY_-w3iKbmAZYQuAGexDS_cNI/edit?usp=sharing)
 
-_done by Zhirko Maria and Khalupka Aliaksandr_
