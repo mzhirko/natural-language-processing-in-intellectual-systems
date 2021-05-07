@@ -25,7 +25,5 @@ python source-code-name.py
 
 * [dictionary system;](https://github.com/mzhirko/natural-language-processing-in-intellectual-systems/tree/main/word-analyser)
 * [syntax analysis;](https://github.com/mzhirko/natural-language-processing-in-intellectual-systems/tree/main/syntax-tree)
-* [semantic parse.](https://github.com/mzhirko/natural-language-processing-in-intellectual-systems/tree/main/semantic-parse)
+* [semantic parse;](https://github.com/mzhirko/natural-language-processing-in-intellectual-systems/tree/main/semantic-parse)
 * [dialog.](https://github.com/mzhirko/natural-language-processing-in-intellectual-systems/tree/main/dialog)
-
-_done by Zhirko Maria and Khalupka Aliaksandr_
